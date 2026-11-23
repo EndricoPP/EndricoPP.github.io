@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                
+        
+        <title>Portofolio Endrico</title>
+        <meta name="description" content="Saya developer muda yang sedang belajar dan menjelajahi dunia AI, terutama LLM dan RAG. Saya suka mencoba hal baru dan terus belajar. Proyek di bawah ini a...">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Portofolio Endrico">
+        <meta property="og:description" content="Saya developer muda yang sedang belajar dan menjelajahi dunia AI, terutama LLM dan RAG. Saya suka mencoba hal baru dan terus belajar. Proyek di bawah ini a...">
+
+        <script>try { if (localStorage.getItem("portfolio-theme") === "light") { document.documentElement.setAttribute("data-theme", "light"); } } catch (e) {}</script>
+        <script>try { if (sessionStorage.getItem("portfolio-loader")) { var r = document.documentElement; r.classList.add("loader-arrive"); setTimeout(function(){r.classList.remove("loader-arrive","loader-out")},4000); } } catch (e) {}</script>
+
+        <link rel="preload" as="font" href="/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2" type="font/woff2" crossorigin="anonymous" />
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-400-normal-D1W7dsQl.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/build/assets/instrument-sans-600-normal-B9e8oLYv.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+</style>
+                    <link rel="preload" as="style" href="/build/assets/app-DfH7xFcw.css" /><link rel="modulepreload" as="script" href="/build/assets/app-BORkvjlT.js" /><link rel="stylesheet" href="/build/assets/app-DfH7xFcw.css" /><script type="module" src="/build/assets/app-BORkvjlT.js"></script>            <script id="browser-logger-active">
+(function() {
+    const ENDPOINT = '/_boost/browser-logs';
+    const logQueue = [];
+    let flushTimeout = null;
+    const captureTypes = ["error","warning","info","log","debug","table"];
+
+    console.log('🔍 Browser logger active (MCP server detected). Posting to: ' + ENDPOINT);
+
+    // Store original console methods
+    const originalConsole = {
+        log: console.log,
+        debug: console.debug,
+        info: console.info,
+        error: console.error,
+        warn: console.warn,
+        table: console.table
+    };
+
+    // Walk own enumerable keys so JSON.stringify cannot auto-invoke a proxy fake toJSON (e.g. Livewire's `$wire`) and fire a real request.
+    function toSafeValue(value, seen) {
+        if (value === null || typeof value !== 'object') {
+            return value;
+        }
+        if (value instanceof Error) {
+            return { name: value.name, message: value.message, stack: value.stack };
+        }
+        // Date has no own enumerable keys, so the walk below would collapse it to {}.
+        if (value instanceof Date) {
+            return value.toISOString();
+        }
+        if (seen.has(value)) {
+            return '[Circular]';
+        }
+        seen.add(value);
+        if (Array.isArray(value)) {
+            return value.map((item) => toSafeValue(item, seen));
+        }
+        const plain = {};
+        for (const key of Object.keys(value)) {
+            if (key === 'toJSON') continue;
+            try {
+                plain[key] = toSafeValue(value[key], seen);
+            } catch (e) {
+                plain[key] = '[Unreadable]';
+            }
+        }
+        return plain;
+    }
+
+    // Helper to safely stringify values
+    function safeStringify(obj) {
+        return JSON.stringify(toSafeValue(obj, new WeakSet()));
+    }
+
+    // Normalize log type for consistency (e.g., 'warn' to 'warning')
+    function normalizeType(type) {
+        return type === 'warn' ? 'warning' : type;
+    }
+
+    // Determine if a log type should be captured based on configured levels
+    function shouldCapture(type) {
+        return captureTypes.includes(normalizeType(type));
+    }
+
+    // Batch and send logs
+    function flushLogs() {
+        if (logQueue.length === 0) return;
+
+        const batch = logQueue.splice(0, logQueue.length);
+
+        fetch(ENDPOINT, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            body: JSON.stringify({ logs: batch })
+        }).catch(err => {
+            // Silently fail to avoid infinite loops
+            originalConsole.error('Failed to send logs:', err);
+        });
+    }
+
+    // Debounced flush (100ms)
+    function scheduleFlush() {
+        if (flushTimeout) clearTimeout(flushTimeout);
+        flushTimeout = setTimeout(flushLogs, 100);
+    }
+
+    // Intercept console methods
+    ['log', 'debug', 'info', 'error', 'warn', 'table'].forEach(method => {
+        console[method] = function(...args) {
+            // Call original method
+            originalConsole[method].apply(console, args);
+
+            // Capture log data
+            try {
+                if (!shouldCapture(method)) {
+                    return;
+                }
+
+                logQueue.push({
+                    type: method,
+                    timestamp: new Date().toISOString(),
+                    data: args.map(arg => {
+                        try {
+                            return typeof arg === 'object' ? JSON.parse(safeStringify(arg)) : arg;
+                        } catch (e) {
+                            return String(arg);
+                        }
+                    }),
+                    url: window.location.href,
+                    userAgent: navigator.userAgent
+                });
+
+                scheduleFlush();
+            } catch (e) {
+                // Fail silently
+            }
+        };
+    });
+
+    // Global error handlers for uncaught errors
+    const originalOnError = window.onerror;
+    window.onerror = function boostErrorHandler(errorMsg, url, lineNumber, colNumber, error) {
+        try {
+            if (shouldCapture('error')) {
+                logQueue.push({
+                    type: 'uncaught_error',
+                    timestamp: new Date().toISOString(),
+                    data: [{
+                        message: errorMsg,
+                        filename: url,
+                        lineno: lineNumber,
+                        colno: colNumber,
+                        error: error ? {
+                            name: error.name,
+                            message: error.message,
+                            stack: error.stack
+                        } : null
+                    }],
+                    url: window.location.href,
+                    userAgent: navigator.userAgent
+                });
+
+                scheduleFlush();
+            }
+
+        } catch (e) {
+            // Fail silently
+        }
+
+        // Call original handler if it exists
+        if (originalOnError && typeof originalOnError === 'function') {
+            return originalOnError(errorMsg, url, lineNumber, colNumber, error);
+        }
+
+        // Let the error continue to propagate
+        return false;
+    }
+    window.addEventListener('error', (event) => {
+        try {
+            if (!shouldCapture('error')) {
+                return false;
+            }
+
+            logQueue.push({
+                type: 'window_error',
+                timestamp: new Date().toISOString(),
+                data: [{
+                    message: event.message,
+                    filename: event.filename,
+                    lineno: event.lineno,
+                    colno: event.colno,
+                    error: event.error ? {
+                        name: event.error.name,
+                        message: event.error.message,
+                        stack: event.error.stack
+                    } : null
+                }],
+                url: window.location.href,
+                userAgent: navigator.userAgent
+            });
+
+            scheduleFlush();
+        } catch (e) {
+            // Fail silently
+        }
+
+        // Let the error continue to propagate
+        return false;
+    });
+    window.addEventListener('unhandledrejection', (event) => {
+        try {
+            if (!shouldCapture('error')) {
+                return false;
+            }
+
+            logQueue.push({
+                type: 'error',
+                timestamp: new Date().toISOString(),
+                data: [{
+                    message: 'Unhandled Promise Rejection',
+                    reason: toSafeValue(event.reason, new WeakSet())
+                }],
+                url: window.location.href,
+                userAgent: navigator.userAgent
+            });
+
+            scheduleFlush();
+        } catch (e) {
+            // Fail silently
+        }
+
+        // Let the rejection continue to propagate
+        return false;
+    });
+
+    // Flush on page unload
+    window.addEventListener('beforeunload', () => {
+        if (logQueue.length > 0) {
+            navigator.sendBeacon(ENDPOINT, JSON.stringify({ logs: logQueue }));
+        }
+    });
+})();
+</script>
+</head>
+    <body class="flex min-h-screen flex-col bg-bg font-sans text-ink antialiased">
+        <a href="#main" class="skip-link">Lewati ke konten</a>
+
+        <div id="loader" data-testid="loader" aria-hidden="true" class="loader">
+    <svg viewBox="-10 0 760 190" class="mx-auto h-auto w-[min(92vw,1500px)]">
+        <defs>
+            <mask id="loader-mask-body" maskUnits="userSpaceOnUse" x="-100" y="-20" width="1400" height="240">
+                <path id="loader-body" fill="#fff" />
+            </mask>
+            <mask id="loader-mask-foam" maskUnits="userSpaceOnUse" x="-100" y="-20" width="1400" height="240">
+                <path id="loader-foam" fill="#fff" />
+            </mask>
+        </defs>
+        <text class="loader-ghost" x="0" y="150" textLength="740" lengthAdjust="spacing">LOADING</text>
+        <text class="loader-foam-text" x="0" y="150" textLength="740" lengthAdjust="spacing" mask="url(#loader-mask-foam)">LOADING</text>
+        <text class="loader-body-text" x="0" y="150" textLength="740" lengthAdjust="spacing" mask="url(#loader-mask-body)">LOADING</text>
+    </svg>
+</div>
+
+        <header class="sticky top-0 z-40 border-b border-line bg-bg/95">
+<nav aria-label="Utama" class="relative grid grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-[var(--gut)] py-3 text-[15px] font-medium text-mute sm:flex sm:justify-center sm:text-base">
+    <a
+        href="/"
+        data-section="beranda"
+                class="flex min-h-11 shrink-0 items-center justify-self-start text-base font-semibold tracking-tight sm:text-lg text-mute transition-colors hover:text-ink aria-[current=page]:text-ink sm:absolute sm:left-[var(--gut)] sm:top-1/2 sm:-translate-y-1/2"
+    >Home</a>
+
+    <div class="flex items-center gap-1 sm:gap-10">
+            <a
+            href="/#tentang"
+                        data-section="tentang"
+            class="flex min-h-11 items-center px-2.5 transition-colors hover:text-ink aria-[current=page]:text-ink max-[380px]:px-1.5 sm:px-2"
+        >Tentang</a>
+            <a
+            href="/#proyek"
+             aria-current="page"             data-section="proyek"
+            class="flex min-h-11 items-center px-2.5 transition-colors hover:text-ink aria-[current=page]:text-ink max-[380px]:px-1.5 sm:px-2"
+        >Proyek</a>
+            <a
+            href="/#kontak"
+                        data-section="kontak"
+            class="flex min-h-11 items-center px-2.5 transition-colors hover:text-ink aria-[current=page]:text-ink max-[380px]:px-1.5 sm:px-2"
+        >Kontak</a>
+        </div>
+
+    <button
+        type="button"
+        data-theme-toggle
+        aria-label="Tema terang"
+        title="Ganti tema"
+        class="flex min-h-11 w-11 shrink-0 items-center justify-self-end sm:absolute sm:right-[var(--gut)] sm:top-1/2 sm:-translate-y-1/2 justify-center rounded-md text-mute transition-colors hover:text-ink"
+    >
+        <svg data-icon-sun viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" class="h-5 w-5">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+        </svg>
+        <svg data-icon-moon viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="hidden h-5 w-5">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+        </svg>
+    </button>
+</nav>
+</header>
+
+        <main id="main" class="flex-1 px-4 py-8 md:px-[var(--gut)] md:py-12">
+        <div class="mx-auto w-full max-w-[61rem] rounded-xl border border-line bg-panel/90 p-5 md:p-10">
+            <a href="/proyek/semua" class="inline-flex min-h-11 items-center text-sm text-mute transition-colors hover:text-ink">← Kembali ke daftar proyek</a>
+
+            <h1 class="mt-2 max-w-[24ch] text-balance text-4xl font-bold leading-[1.05] tracking-[-0.03em] md:text-6xl">UAT Aplikasi Talent</h1>
+
+                            <p class="mt-5 max-w-[62ch] text-lg leading-relaxed text-mute">User Acceptance Testing (UAT) Aplikasi Talent (Dinamika Karir), portal karier PLKA Universitas Dinamika yang mempertemukan alumni dengan lowongan dari perusahaan mitra. Saya menjadi Koordinator Pelaksana UAT dari Aliria Tech dan menguji aplikasi sebagai Admin PLKA, sekaligus menyatukan temuan tim untuk diperbaiki pengembang.</p>
+            
+                    <a href="http://103.93.134.95:8081/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex min-h-11 items-center rounded-md border border-mute/60 px-5 text-base text-ink transition-colors hover:border-ink">Buka aplikasi ↗</a>
+        
+        <dl class="mt-8 grid gap-x-10 gap-y-5 border-y border-line py-6 sm:grid-cols-3">
+                                    <div>
+                        <dt class="text-xs uppercase tracking-[0.15em] text-mute">Peran</dt>
+                        <dd class="mt-1.5 text-base">Koordinator UAT · Penguji sebagai Admin PLKA</dd>
+                    </div>
+                                                    <div>
+                        <dt class="text-xs uppercase tracking-[0.15em] text-mute">Tahun</dt>
+                        <dd class="mt-1.5 text-base">2026</dd>
+                    </div>
+                                <div>
+                    <dt class="text-xs uppercase tracking-[0.15em] text-mute">Status</dt>
+                    <dd class="mt-1.5 flex flex-wrap gap-2">
+                        <span class="inline-block rounded-full border px-2.5 py-0.5 text-sm border-accent text-accent">Sedang dikerjakan</span>
+                                                    <span class="inline-block rounded-full border border-line px-2.5 py-0.5 text-sm text-mute">Aliria Tech</span>
+                                            </dd>
+                </div>
+                            </dl>
+
+            <h2 class="mt-12 text-xl font-bold">Apa saja yang dikerjakan</h2>
+            <ul class="mt-3 max-w-[62ch] list-disc space-y-2 pl-5 text-lg leading-relaxed text-mute">
+                                    <li>Menjadi Koordinator Pelaksana UAT dari Aliria Tech, menguji langsung sebagai Admin PLKA, dan menyusun dokumen UAT yang ditandatangani bersama Ketua Umum Aliria Tech dan klien (PLKA Universitas Dinamika)</li>
+                                    <li>Membagi pengujian ke empat penguji menurut peran: perusahaan mitra, alumni, Admin PLKA (saya), dan Admin CASC</li>
+                                    <li>Menguji sisi perusahaan: registrasi mitra, dropdown wilayah, dan pembuatan lowongan bertahap, sampai temuan tampilan seperti dropdown yang terpotong dan format teks yang tidak konsisten</li>
+                                    <li>Menguji sisi alumni: kelola profil, CV builder, lamar lowongan dengan CV dan portofolio, lacak status lamaran, dan notifikasi</li>
+                                    <li>Menguji sisi Admin PLKA: manajemen perusahaan (filter, validasi, MoU/MoA), manajemen lowongan, serta manajemen alumni dan analitik alumni</li>
+                                    <li>Menemukan bug berdampak tinggi, misalnya unggah CV 858 KB gagal dengan error 413 padahal batasnya 5 MB, dan badge Mitra CASC yang tidak muncul walau MoU/MoA sudah ditambahkan</li>
+                                    <li>Menemukan celah validasi, misalnya tanggal mulai MoU/MoA bisa mundur ke belakang dan tanggal berakhir bisa lebih awal dari tanggal mulai</li>
+                                    <li>Mengusulkan fitur baru dan perbaikan alur, misalnya tahap interview yang tetap hijau pada lamaran yang sudah ditolak, notifikasi yang tidak berurutan, dan dokumen alumni yang dibuka dalam modal</li>
+                                    <li>Mencatat tiap temuan dengan indeks LOW, MEDIUM, HIGH, atau NEW, lengkap dengan bukti tangkapan layar dan saran perbaikan, lalu memverifikasi ulang hasil perbaikan bersama klien</li>
+                            </ul>
+
+            <h2 class="mt-12 text-xl font-bold">Hasil</h2>
+                            <div data-testid="finding-compare" class="mt-4 grid gap-10 md:grid-cols-2 md:gap-8">
+                    <figure>
+                <figcaption class="text-xs uppercase tracking-[0.15em] text-mute">Menurut tingkat</figcaption>
+                <div class="mt-4 flex flex-col items-center gap-6 sm:flex-row sm:items-center md:flex-col md:items-center lg:flex-row">
+                    <div class="relative size-40 shrink-0" role="img" aria-label="Temuan menurut tingkat: HIGH 1, MEDIUM 3, LOW 6">
+                        <svg viewBox="-1 -1 38 38" class="size-full -rotate-90" aria-hidden="true">
+                            <circle cx="18" cy="18" r="15.9155" fill="none" stroke="currentColor" stroke-width="5" class="text-line/60" />
+                                                                                                                        <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#f0735c" stroke-width="5" stroke-dasharray="9.2 90.8" stroke-dashoffset="0" />
+                                                                                                                            <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#f0a24a" stroke-width="5" stroke-dasharray="29.2 70.8" stroke-dashoffset="-10" />
+                                                                                                                            <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#e8d765" stroke-width="5" stroke-dasharray="59.2 40.8" stroke-dashoffset="-40" />
+                                                                                    </svg>
+                        <p class="absolute inset-0 flex flex-col items-center justify-center leading-none"><span class="text-4xl font-bold">10</span><span class="mt-1 text-xs text-mute">temuan</span></p>
+                    </div>
+
+                    <ul class="w-full min-w-0 space-y-2 text-sm">
+                                                    <li class="flex items-center gap-2.5">
+                                <span class="size-3 shrink-0 rounded-full" style="background: #f0735c"></span>
+                                <span class="min-w-0 flex-1 text-mute">HIGH</span>
+                                <span class="font-semibold tabular-nums">1</span>
+                            </li>
+                                                    <li class="flex items-center gap-2.5">
+                                <span class="size-3 shrink-0 rounded-full" style="background: #f0a24a"></span>
+                                <span class="min-w-0 flex-1 text-mute">MEDIUM</span>
+                                <span class="font-semibold tabular-nums">3</span>
+                            </li>
+                                                    <li class="flex items-center gap-2.5">
+                                <span class="size-3 shrink-0 rounded-full" style="background: #e8d765"></span>
+                                <span class="min-w-0 flex-1 text-mute">LOW</span>
+                                <span class="font-semibold tabular-nums">6</span>
+                            </li>
+                                            </ul>
+                </div>
+            </figure>
+                    <figure>
+                <figcaption class="text-xs uppercase tracking-[0.15em] text-mute">Menurut fitur</figcaption>
+                <div class="mt-4 flex flex-col items-center gap-6 sm:flex-row sm:items-center md:flex-col md:items-center lg:flex-row">
+                    <div class="relative size-40 shrink-0" role="img" aria-label="Temuan menurut fitur: Manajemen perusahaan 5, Manajemen alumni 3, Manajemen lowongan 2">
+                        <svg viewBox="-1 -1 38 38" class="size-full -rotate-90" aria-hidden="true">
+                            <circle cx="18" cy="18" r="15.9155" fill="none" stroke="currentColor" stroke-width="5" class="text-line/60" />
+                                                                                                                        <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#ffd21f" stroke-width="5" stroke-dasharray="49.2 50.8" stroke-dashoffset="0" />
+                                                                                                                            <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#7ec0f0" stroke-width="5" stroke-dasharray="29.2 70.8" stroke-dashoffset="-50" />
+                                                                                                                            <circle cx="18" cy="18" r="15.9155" fill="none" stroke="#9bd49a" stroke-width="5" stroke-dasharray="19.2 80.8" stroke-dashoffset="-80" />
+                                                                                    </svg>
+                        <p class="absolute inset-0 flex flex-col items-center justify-center leading-none"><span class="text-4xl font-bold">10</span><span class="mt-1 text-xs text-mute">temuan</span></p>
+                    </div>
+
+                    <ul class="w-full min-w-0 space-y-2 text-sm">
+                                                    <li class="flex items-center gap-2.5">
+                                <span class="size-3 shrink-0 rounded-full" style="background: #ffd21f"></span>
+                                <span class="min-w-0 flex-1 text-mute">Manajemen perusahaan</span>
+                                <span class="font-semibold tabular-nums">5</span>
+                            </li>
+                                                    <li class="flex items-center gap-2.5">
+                                <span class="size-3 shrink-0 rounded-full" style="background: #7ec0f0"></span>
+                                <span class="min-w-0 flex-1 text-mute">Manajemen alumni</span>
+                                <span class="font-semibold tabular-nums">3</span>
+                            </li>
+                                                    <li class="flex items-center gap-2.5">
+                                <span class="size-3 shrink-0 rounded-full" style="background: #9bd49a"></span>
+                                <span class="min-w-0 flex-1 text-mute">Manajemen lowongan</span>
+                                <span class="font-semibold tabular-nums">2</span>
+                            </li>
+                                            </ul>
+                </div>
+            </figure>
+            </div>
+                                            </div>
+
+                    <div aria-hidden="true" data-recruit-scene data-scene="talent" class="rscene">
+    <canvas class="rscene-canvas"></canvas>
+</div>
+            </main>
+
+        <footer id="kontak" class="bg-accent text-on-accent">
+    <div class="px-[var(--gut)] pt-12">
+        <h2 class="text-4xl font-bold tracking-tight md:text-5xl">Get in touch</h2>
+    </div>
+
+    <div class="flex flex-wrap items-start justify-between gap-x-10 gap-y-6 px-[var(--gut)] pb-10 pt-6">
+        <div>
+            <p class="text-sm font-semibold">Kirim pesan</p>
+            <a href="mailto:endricopermana@gmail.com" class="inline-flex min-h-11 items-center text-base underline underline-offset-4 transition-opacity hover:opacity-70">endricopermana@gmail.com</a>
+        </div>
+
+        <p class="max-w-[340px] text-2xl font-medium leading-snug">Punya ide atau proyek seputar software dan AI? Kirim pesan, mari kita ngobrol.</p>
+
+        <div>
+            <p class="mb-3.5 text-sm font-semibold">Terhubung</p>
+            <ul data-testid="connect" class="grid grid-cols-3 gap-3 md:grid-cols-5">
+                                    <li>
+                                                    <a href="https://wa.me/6285546452751" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp" class="social-icon">
+                                <span class="icon" style="--icon: url('/images/social/whatsapp.svg')"></span>
+                            </a>
+                                            </li>
+                                    <li>
+                                                    <a href="https://discord.com/users/331408484937629697" target="_blank" rel="noopener noreferrer" aria-label="Discord" title="Discord" class="social-icon">
+                                <span class="icon" style="--icon: url('/images/social/discord.svg')"></span>
+                            </a>
+                                            </li>
+                                    <li>
+                                                    <a href="https://www.linkedin.com/in/endrico/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" class="social-icon">
+                                <span class="icon" style="--icon: url('/images/social/linkedin.svg')"></span>
+                            </a>
+                                            </li>
+                                    <li>
+                                                    <a href="https://github.com/EndricoPP" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" class="social-icon">
+                                <span class="icon" style="--icon: url('/images/social/github.svg')"></span>
+                            </a>
+                                            </li>
+                                    <li>
+                                                    <a href="https://www.instagram.com/nyxss1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" class="social-icon">
+                                <span class="icon" style="--icon: url('/images/social/instagram.svg')"></span>
+                            </a>
+                                            </li>
+                            </ul>
+        </div>
+    </div>
+
+    <div class="border-t border-on-accent/25 px-[var(--gut)] py-3.5 text-xs">© 2026 · Endrico Permana Putra</div>
+</footer>
+    </body>
+</html>
